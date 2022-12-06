@@ -51,7 +51,7 @@ function Footer() {
 
       <div className="container footer_copy">
         <div className="row justify-content-center py-4">
-          <p className=" footer_text"> WUSDT DECENTRALIZED FINANCE SYSTEM  © 2022 | All Rights Reserved</p>
+          <p className=" footer_text"> wUSDT DECENTRALIZED FINANCE SYSTEM  © 2022 | All Rights Reserved</p>
         </div>
       </div>
     </div>

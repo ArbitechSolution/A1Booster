@@ -107,12 +107,12 @@ function Stack_level() {
                                 <p className='s_l_p'>Income:</p>
                                 <p className=' aliment'>{Number(userIncome).toFixed(2)}</p>
                             </div>
-                            <div className="d-flex S_sss">
+                            {/* <div className="d-flex S_sss">
                                 <p className='s_l_p'>WYZ Balance:</p>
                                 <p className=' aliment'>{userAccountbalance}</p>
-                            </div>
+                            </div> */}
                             <div className="d-flex S_sss">
-                                <p className='s_l_p'>WUSDT Balance:</p>
+                                <p className='s_l_p'>wUSDT Balance:</p>
                                 <p className=' aliment '>{usdtBalance}</p>
                             </div>
                             <div className="d-flex S_sss">
