@@ -105,8 +105,8 @@ function Register(props, getAccount) {
         }
     }
     useEffect(() => {
-        getReferral()
-        // ReferralAddress()
+        // getReferral()
+        ReferralAddress()
     }, []);
 
 
