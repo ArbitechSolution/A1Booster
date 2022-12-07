@@ -141,7 +141,7 @@ function Withdraw_m(props) {
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="d-flex justify-content-between">
-                                    <p className='text-white'>2-4 level</p>
+                                    <p className='text-white'>2-5 level</p>
                                     <p className='witddraw_p text-white'>{withdrawDetail.level4Released} wUSDT</p>
                                 </div>
                             </div>
@@ -149,7 +149,7 @@ function Withdraw_m(props) {
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="d-flex justify-content-between">
-                                    <p className='text-white'>5-25 level</p>
+                                    <p className='text-white'>6-20 level</p>
                                     <p className='witddraw_p text-white'>{withdrawDetail.level5Released} wUSDT</p>
                                 </div>
                             </div>
