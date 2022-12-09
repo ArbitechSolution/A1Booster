@@ -17,11 +17,10 @@ export const getRemaintime = (acc) => {
                   );
                   let orderlength = await contract.methods.getOrderLength(acc).call();
                   if(orderlength > 0){
-                    let {start} = await contract.methods
+                    let {unfreeze} = await contract.methods
                     .orderInfos(acc, (orderlength-1)).call()
-                    let sTime = Number(start);
-                    let rTime = sTime + 1296000;
-                     dispatch({ type: ActionTypes.REMAIN_TIME, payload: start != 0 ? rTime : 0 });
+                    let sTime = Number(unfreeze);
+                     dispatch({ type: ActionTypes.REMAIN_TIME, payload: sTime != 0 ? sTime : 0 });
                   }else{
                      dispatch({ type: ActionTypes.REMAIN_TIME, payload: 0 });
                   }
