@@ -27,15 +27,21 @@ function Deposit_details() {
         let getOrderLength = await financeAppcontractOf.methods.getOrderLength(acc).call();
         if (getOrderLength > 0) {
           getOrderLength = getOrderLength - 1
-
           let orderInfos = await financeAppcontractOf.methods.orderInfos(acc, getOrderLength).call();
+          let getBoosterIncomeIsReady = await financeAppcontractOf.methods.getBoosterIncomeIsReady(acc).call()
+          let amount = web3.utils.fromWei(orderInfos.amount)
+          if(getBoosterIncomeIsReady[0]){
+            let value = parseInt(amount) / 100 * 30;
+            setReward(value)
+          }else{
+            let value = parseInt(amount) / 100 * 20;
+            setReward(value)
+          }
           setUnixTime(orderInfos.start)
           setUnixFreezTime(orderInfos.unfreeze)
           // console.log("orderInfos",orderInfos.start);
           setOrderInfo({ ...orderInfos })
-          let amount = web3.utils.fromWei(orderInfos.amount)
-          let value = parseInt(amount) / 100 * 4;
-          setReward(value)
+          
           setOrderAmount(amount)
           setFlag(true)
         }
