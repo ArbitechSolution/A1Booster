@@ -41,7 +41,7 @@ function Deposit_details() {
           setUnixFreezTime(orderInfos.unfreeze)
           // console.log("orderInfos",orderInfos.start);
           setOrderInfo({ ...orderInfos })
-          
+        
           setOrderAmount(amount)
           setFlag(true)
         }

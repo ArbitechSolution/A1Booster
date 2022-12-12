@@ -97,7 +97,7 @@ function Deposite_m(props) {
                                 <input type="number" min="50" max="2000" value={depositandintrest} onChange={(e)=>{
                                     setdepositandintrest(e.target.value)
                                 }} className='input_modal' placeholder='50' />
-                                <p className='modal_pa'>Minimum deposit 50 WUSDT. A ratio of 50 max 10000</p>
+                                <p className='modal_pa'>Minimum deposit 50 WUSDT. A ratio of 50 max 2000</p>
                             </div>
                         </div>
                     </div>
